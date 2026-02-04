@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gautam Thakur | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Background Particles Canvas -->
+    <canvas id="bg-particles" aria-hidden="true"></canvas>
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+      <!-- Navbar -->
+      <header class="navbar">
+        <div class="container nav-inner">
+          <a href="#home" class="logo" aria-label="Gautam Thakur Home">
+            <span class="logo-mark">GT</span>
+            <span class="logo-text">
+              <span class="logo-title">Gautam Thakur</span>
+              <span class="logo-subtitle">Java &amp; Cybersecurity</span>
+            </span>
+          </a>
+
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Toggle dark mode"
+            >
+              <span class="theme-icon theme-icon-moon">🌙</span>
+              <span class="theme-icon theme-icon-sun">☀️</span>
+            </button>
+
+            <button
+              class="nav-toggle"
+              id="nav-toggle"
+              type="button"
+              aria-label="Toggle navigation menu"
+            >
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section id="home" class="section hero section-reveal">
+          <div class="container hero-grid">
+            <div class="hero-content glass-card">
+              <p class="hero-kicker">Java Developer &amp; Cybersecurity Enthusiast</p>
+
+              <h1 class="hero-title">Hi, I'm <span>Gautam Thakur</span></h1>
+
+              <p class="hero-typing" aria-label="Key focus areas">
+                <span id="typing-text"></span>
+                <span class="typing-cursor"></span>
+              </p>
+
+              <p class="hero-description">
+                I build secure, modern applications with a strong focus on
+                <strong>Java</strong>, <strong>Python</strong>, and real‑world
+                <strong>web application security</strong>. I love working on DAST engines,
+                API security, and tools that make security testing smarter.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-ghost">Contact Me</a>
+              </div>
+
+              <div class="hero-meta">
+                <div>
+                  <span class="meta-label">Based in</span>
+                  <span class="meta-value">India</span>
+                </div>
+                <div>
+                  <span class="meta-label">Focus</span>
+                  <span class="meta-value">OWASP Top 10 &amp; DAST</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-side glass-card">
+              <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot amber"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-body">
+                <p class="terminal-line">
+                  <span class="prompt">gautam@portfolio</span>
+                  <span class="path">~/security-lab</span>
+                </p>
+                <p class="terminal-line">$ whoami</p>
+                <p class="terminal-output">
+                  Java Developer · Python · Security Research · OWASP Top 10
+                </p>
+                <p class="terminal-line">$ ./dast-engine --targets "SQLi,XSS,SSRF,API"</p>
+                <p class="terminal-output">
+                  Running smart, noise‑reduced scans against modern web stacks...
+                </p>
+                <p class="terminal-line">$ status --confidence</p>
+                <p class="terminal-output success">
+                  High‑signal findings · Reduced false positives · Actionable results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section section-reveal">
+          <div class="container about-grid">
+            <div class="section-header">
+              <h2 class="section-title">About</h2>
+              <p class="section-subtitle">
+                Java Developer and Cybersecurity Enthusiast focused on building secure, scalable
+                applications.
+              </p>
+            </div>
+
+            <div class="about-content glass-card">
+              <p>
+                I'm an entry‑level <strong>Java developer</strong> with a deep interest in
+                <strong>application security</strong>. I enjoy working at the intersection of
+                development and security: building tools that uncover vulnerabilities like
+                <strong>SQL Injection</strong>, <strong>XSS</strong>, and <strong>SSRF</strong>,
+                while keeping developer experience smooth.
+              </p>
+              <p>
+                My primary focus is learning and applying
+                <strong>OWASP Top 10</strong> best practices, building
+                <strong>DAST tooling</strong>, and strengthening API and mobile app security. I pay
+                close attention to <strong>false positive reduction</strong>, reproducible test
+                cases, and clear reporting that security teams can trust.
+              </p>
+              <p>
+                Outside of security, I enjoy experimenting with Android apps, backend APIs, and
+                cloud‑backed architectures, always with a "secure by design" mindset.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section section-reveal">
+          <div class="container">
+            <div class="section-header center">
+              <h2 class="section-title">Skills</h2>
+              <p class="section-subtitle">
+                A blend of backend development and hands‑on security testing experience.
+              </p>
+            </div>
+
+            <div class="skills-grid">
+              <div class="glass-card">
+                <h3 class="card-title">Core Languages</h3>
+                <div class="skill-bar" data-skill="Java" data-level="85">
+                  <div class="skill-bar-header">
+                    <span>Java</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-bar" data-skill="Python" data-level="80">
+                  <div class="skill-bar-header">
+                    <span>Python</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-card">
+                <h3 class="card-title">Security &amp; OWASP Top 10</h3>
+                <ul class="skill-list">
+                  <li>OWASP Top 10 fundamentals and secure coding practices</li>
+                  <li>SQL Injection detection &amp; prevention</li>
+                  <li>Cross‑Site Scripting (XSS) &amp; basic input sanitization</li>
+                  <li>Server‑Side Request Forgery (SSRF) patterns</li>
+                  <li>Dynamic Application Security Testing (DAST)</li>
+                  <li>API security testing and fuzzing basics</li>
+                </ul>
+              </div>
+
+              <div class="glass-card">
+                <h3 class="card-title">Web &amp; Tools</h3>
+                <div class="skill-bar" data-skill="HTML &amp; CSS" data-level="85">
+                  <div class="skill-bar-header">
+                    <span>HTML &amp; CSS</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-bar" data-skill="API Testing" data-level="75">
+                  <div class="skill-bar-header">
+                    <span>API Testing (Postman)</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-bar" data-skill="Android" data-level="70">
+                  <div class="skill-bar-header">
+                    <span>Android (Java, Firebase)</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section section-reveal">
+          <div class="container">
+            <div class="section-header center">
+              <h2 class="section-title">Projects</h2>
+              <p class="section-subtitle">
+                Security‑driven and user‑centric projects that reflect my interests.
+              </p>
+            </div>
+
+            <div class="projects-grid">
+              <!-- DAST Engine -->
+              <article class="project-card glass-card">
+                <div class="project-badge">Security / DAST</div>
+                <h3 class="project-title">DAST Engine – Web Application Vulnerability Scanner</h3>
+                <p class="project-description">
+                  A custom <strong>Dynamic Application Security Testing (DAST)</strong> engine
+                  designed to scan modern web apps and APIs for
+                  <strong>SQL Injection, XSS, SSRF</strong>, and other
+                  <strong>OWASP Top 10</strong> vulnerabilities.
+                </p>
+                <p class="project-description">
+                  It focuses on <strong>false‑positive reduction</strong> by combining smart payload
+                  generation, response analysis, and contextual heuristics, producing reports that
+                  security teams can act on confidently.
+                </p>
+                <div class="project-tags">
+                  <span>DAST</span>
+                  <span>OWASP Top 10</span>
+                  <span>Automation</span>
+                  <span>API Testing</span>
+                </div>
+              </article>
+
+              <!-- Fitness Tracker Android App -->
+              <article class="project-card glass-card">
+                <div class="project-badge">Android</div>
+                <h3 class="project-title">Fitness Tracker Android App</h3>
+                <p class="project-description">
+                  A modern <strong>Android fitness tracker</strong> focused on yoga and everyday
+                  movement, built with <strong>Java</strong> and integrated with
+                  <strong>Firebase</strong> for secure authentication and
+                  <strong>Google Fit API</strong> for activity data.
+                </p>
+                <p class="project-description">
+                  Emphasizes clean UI, progress tracking, and a smooth, privacy‑aware experience for
+                  users who want to build healthy daily habits.
+                </p>
+                <div class="project-tags">
+                  <span>Android</span>
+                  <span>Java</span>
+                  <span>Firebase</span>
+                  <span>Google Fit API</span>
+                </div>
+              </article>
+
+              <!-- Portfolio -->
+              <article class="project-card glass-card">
+                <div class="project-badge">Web</div>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-description">
+                  This portfolio itself – a <strong>modern, responsive</strong> single‑page site built
+                  with semantic <strong>HTML</strong>, custom <strong>CSS</strong>, and
+                  <strong>vanilla JavaScript</strong>, inspired by startup landing pages.
+                </p>
+                <p class="project-description">
+                  Includes a gradient background, <strong>glassmorphism</strong>, animated particles,
+                  scroll reveal animations, dark/light mode, and accessibility‑minded semantics.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Responsive Design</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-reveal">
+          <div class="container contact-grid">
+            <div class="section-header">
+              <h2 class="section-title">Contact</h2>
+              <p class="section-subtitle">
+                Have an opportunity, collaboration, or idea? I'd love to hear from you.
+              </p>
+            </div>
+
+            <div class="glass-card contact-card">
+              <form id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      autocomplete="name"
+                      required
+                      minlength="2"
+                      maxlength="80"
+                    />
+                    <p class="field-error" id="name-error"></p>
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      required
+                      maxlength="120"
+                      inputmode="email"
+                    />
+                    <p class="field-error" id="email-error"></p>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    minlength="10"
+                    maxlength="1000"
+                  ></textarea>
+                  <p class="field-error" id="message-error"></p>
+                </div>
+
+                <p class="form-helper">
+                  Basic validation and filtering is applied to help guard against simple XSS and
+                  malformed input.
+                </p>
+
+                <button type="submit" class="btn btn-primary full-width">
+                  Send Message
+                </button>
+
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p class="footer-copy">
+            © <span id="year"></span> Gautam Thakur. All rights reserved.
+          </p>
+          <div class="footer-links">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Back to top button -->
+      <button
+        id="back-to-top"
+        class="back-to-top"
+        type="button"
+        aria-label="Scroll back to top"
+      >
+        ↑
+      </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
